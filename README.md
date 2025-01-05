@@ -1,0 +1,2 @@
+# vix
+Neovim nix configuration
