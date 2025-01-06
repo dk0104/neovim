@@ -1,8 +1,9 @@
 {
-  description = "Denis Keksel's Neovim configuration";
+  description = "Neovim configuration";
 
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    unstable.url = "github:nixos/nixpkgs/nixos-unstable";
 
     nixvim = {
       url = "github:nix-community/nixvim";
@@ -20,21 +21,30 @@
     };
   };
 
+  # TODO: a todo
+  # NOTE: a note
+  # WARN: a warning
+  # HACK: a hack
   outputs =
     inputs:
     inputs.snowfall-lib.mkFlake {
       inherit inputs;
+
       src = ./.;
+
       snowfall = {
         namespace = "flocke";
       };
 
       channels-config.allowUnfree = true;
+
       alias.packages.default = "neovim";
-      overlays = with inputs; [nixvim.overlays.default];
+
+      overlays = with inputs; [ nixvim.overlays.default ];
 
       outputs-builder = channels: {
         formatter = channels.nixpkgs.nixfmt-rfc-style;
+
         checks.pre-commit-check = inputs.pre-commit-hooks.lib.${channels.nixpkgs.system}.run {
           src = ./.;
           hooks = {
@@ -45,8 +55,6 @@
             };
           };
         };
-
       };
-
     };
 }
