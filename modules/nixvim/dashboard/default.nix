@@ -1,9 +1,8 @@
 { helpers, pkgs, ... }:
-
 {
-
   plugins.dashboard = {
-    enable = true;
+   enable = true;
+   settings = {
     change_to_vcs_root = true;
     shortcut_type = "letter";
 
@@ -73,10 +72,10 @@
             icon = " ";
             desc = "Config ";
             key = "c";
-            action = "e $HOME/source/vix";
+            action = "e $HOME/.config/nvim";
           }
-      ];
-    };
+       ];
+     };
    };
-  };
+ };
 }
