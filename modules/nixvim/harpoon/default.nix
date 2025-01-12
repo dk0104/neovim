@@ -1,6 +1,6 @@
 # Harpoon plugin
+{ helpers, pkgs, ... }:
 {
-  programs.nixvim = {
     plugins.harpoon = {
       enable = true;
       keymapsSilent = true;
@@ -15,5 +15,4 @@
         };
       };
     };
-  };
 }
