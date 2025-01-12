@@ -149,8 +149,8 @@ in
       docker-compose-language-service.enable = true;
       eslint.enable = true;
       emmet-ls.enable = true;
-      gleam.enable = true;
-      gdscript.enable = true;
+      #gleam.enable = true;
+      #gdscript.enable = true;
       gopls.enable = true;
       graphql.enable = true;
       helm-ls.enable = true;
@@ -188,7 +188,7 @@ in
           };
         };
       };
-      nushell.enable = true;
+     # nushell.enable = true;
      # perlpls.enable = true;
      # phpactor.enable = true;
      # prismals.enable = true;
@@ -200,10 +200,10 @@ in
         installRustc = true;
       };
 
-      sqls.enable = true;
-      tailwindcss.enable = true;
-      terraformls.enable = true;
-      tsserver.enable = true;
+     # sqls.enable = true;
+     # tailwindcss.enable = true;
+     # terraformls.enable = true;
+     # tsserver.enable = true;
      # vuels.enable = true;
      # yamlls.enable = true;
      # zls.enable = true;
