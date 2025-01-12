@@ -205,8 +205,8 @@ in
       terraformls.enable = true;
       tsserver.enable = true;
      # vuels.enable = true;
-      yamlls.enable = true;
-      zls.enable = true;
+     # yamlls.enable = true;
+     # zls.enable = true;
     };
   };
 
