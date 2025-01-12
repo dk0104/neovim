@@ -204,7 +204,7 @@ in
       tailwindcss.enable = true;
       terraformls.enable = true;
       tsserver.enable = true;
-      vuels.enable = true;
+     # vuels.enable = true;
       yamlls.enable = true;
       zls.enable = true;
     };
