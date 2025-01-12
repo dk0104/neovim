@@ -189,10 +189,10 @@ in
         };
       };
       nushell.enable = true;
-      perlpls.enable = true;
-      phpactor.enable = true;
-      prismals.enable = true;
-      pyright.enable = true;
+     # perlpls.enable = true;
+     # phpactor.enable = true;
+     # prismals.enable = true;
+     # pyright.enable = true;
 
       rust-analyzer = {
         enable = true;
