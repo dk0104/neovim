@@ -1,5 +1,4 @@
 # Lazygit plugin
-{ helpers, pkgs, ... }:
 {
   plugins.lazygit = {
     enable = true;
