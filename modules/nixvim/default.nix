@@ -110,5 +110,14 @@
         desc = "Exit terminal mode";
       };
     }
+
+    {
+      mode = "n";
+      key = "<leader>gg";
+      action = "<cmd>lazygit<CR>";
+      options = {
+        desc = "LazyGit (root dir)";
+      };
+    }
   ];
 }
