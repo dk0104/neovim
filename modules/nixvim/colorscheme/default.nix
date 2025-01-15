@@ -21,7 +21,7 @@
     settings = {
       borders = true;
       contrast = false;
-      disable_background = false;
+      disable_background = true;
       enable_sidebar_background = true;
     };
   };
